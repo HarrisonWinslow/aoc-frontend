@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import { Container, Typography, Button, Stack } from '@mui/material'; 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
+import BreadcrumbsNav from "./BreadcrumbsNav";
+
 
 function AOCYear() {
   const { year } = useParams();
@@ -16,6 +18,7 @@ function AOCYear() {
 
   return (
     <Container>
+      <BreadcrumbsNav />
       <Typography variant="h4" gutterBottom>
         Advent of Code {year}
       </Typography>

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import AOCYear from './Components/AOCYear';
 import AOCDay from './Components/AOCDay';
+import BreadcrumbsNav from "./Components/BreadcrumbsNav";
 
 function Home() {
   
@@ -18,12 +19,10 @@ function Home() {
   
   return (
     <Container>
+      <BreadcrumbsNav />
       <Typography variant="h2" gutterBottom>
         Hello, welcome to Harrison's Advent of Code!
       </Typography>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
       <Typography variant="h5" gutterBottom sx={{ marginTop: 4 }}>
         Years
       </Typography>
